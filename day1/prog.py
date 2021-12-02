@@ -1,4 +1,3 @@
-import time
 def day_1_part_1():
     data = open("input.txt", "r")
     lines = [int(i) for i in data.readlines()]
