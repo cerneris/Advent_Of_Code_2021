@@ -27,7 +27,7 @@ class day_3:
         gamma = int("".join(gamma), 2)
         epsilon = int("".join(epsilon), 2)
         
-        print("Power consumption is {}".format(gamma*epsilon))
+        print("Power consumption is {}.".format(gamma*epsilon))
 
     def day_3_part_2(self, data, j=0, rec=1):
         new_data_1 = []
@@ -53,7 +53,7 @@ class day_3:
                 new_data_1.append(data[i])
             else:
                 new_data_2.append(data[i])
-        if j == 11 or len(data) == 1:
+        if j == len(data[0]) or len(data) == 1:
             self.life_support = self.life_support * int(data[0], 2)
         else:
             j += 1
@@ -70,6 +70,6 @@ class day_3:
     
 data = open("input.txt", "r").readlines()
 
-day_3_class = day_3(data)
+day_3_class = day_3()
 day_3_class.day_3_part_1(data)
 day_3_class.day_3_combine_and_calc(data)
