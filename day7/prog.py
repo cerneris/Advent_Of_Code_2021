@@ -1,4 +1,4 @@
-def day_6_part_1():
+def day_7_part_1():
     data = open("input.txt", "r")
     line = data.readline()
     values = [int(i.strip()) for i in line.split(",")]
@@ -16,7 +16,7 @@ def day_6_part_1():
         values_list.append(temp)
     print(min(values_list))
     
-def day_6_part_2():
+def day_7_part_2():
     data = open("input.txt", "r")
     line = data.readline()
     values = [int(i.strip()) for i in line.split(",")]
@@ -36,5 +36,5 @@ def day_6_part_2():
         values_list.append(temp2)
     print(min(values_list))
     
-day_6_part_1()
-day_6_part_2()
+day_7_part_1()
+day_7_part_2()
